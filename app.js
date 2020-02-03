@@ -17,6 +17,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/majka', momRouter);
 app.use('/otac', dadRouter);
 
-app.listen(5000, console.log('Appp is running on 5000 port'))
+app.listen(process.env.PORT, console.log('Appp is running on 5000 port'))
 
 module.exports = app;
